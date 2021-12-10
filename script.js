@@ -6,7 +6,14 @@ const secondHand = document.getElementById("secondHand");
 
 setInterval(function loadTime() {
   let d = new Date();
-  hourHand.style.transform = "rotate(" + d.getHours() * 30 + "deg)";
+  if (d.getMinutes() > 30) {
+    console.log(d.getMinutes());
+    let h = d.getHours() + 0.5;
+    hourHand.style.transform = "rotate(" + h * 30 + "deg)";
+  } else {
+    hourHand.style.transform = "rotate(" + d.getHours() * 30 + "deg)";
+  }
+
   minuteHand.style.transform = "rotate(" + d.getMinutes() * 6 + "deg)";
   secondHand.style.transform = "rotate(" + d.getSeconds() * 6 + "deg)";
 }, 1000);
