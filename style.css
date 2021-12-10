@@ -5,8 +5,8 @@ body {
 }
 
 .clock {
-  width: 327px;
-  height: 44vh;
+  width: 350px;
+  height: 350px;
   transform: translateY(45%);
   border: 10px solid #e8e5ef;
   margin: auto;
@@ -20,7 +20,7 @@ body {
   background: #fff;
   position: absolute;
   top: 50%;
-  left: 49%;
+  left: 50%;
   border-radius: 50%;
   box-shadow: 0px 0px 0px 4px #a3a1a1, 0px 0px 0px 5px #9d9d9d;
 }
@@ -29,8 +29,8 @@ body {
   height: 110px;
   background: #e8e5ef;
   position: absolute;
-  left: 49%;
-  top: 55px;
+  left: 50%;
+  top: 20%;
   border-radius: 55px 55px 0 0px;
   transform-origin: bottom;
   transform: rotate(0deg);
@@ -40,11 +40,11 @@ body {
   height: 134px;
   background: #ffffff;
   position: absolute;
-  left: 49.7%;
-  top: 37px;
+  left: 51%;
+  top: 46px;
   border-radius: 55px 55px 0px 0px;
   transform-origin: bottom;
-  transform: rotate(0deg);
+  /* transform: rotate(0deg); */
   box-shadow: 0px 5px 2px #727272;
 }
 .second-hand {
@@ -52,9 +52,22 @@ body {
   height: 155px;
   background: yellow;
   position: absolute;
-  left: 50.2%;
-  top: 17px;
+  left: 51.5%;
+  top: 28px;
   border-radius: 55px 55px 0px 0px;
   transform-origin: bottom;
-  transform: rotate(0deg);
+  /* transform: rotate(0deg); */
+}
+.brand {
+  position: absolute;
+  top: 48%;
+  left: 43%;
+  background-color: #fff;
+  font-size: 21px;
+  z-index: -1;
+  padding: 0 5px;
+  border-radius: 5px;
+  font-weight: bold;
+  letter-spacing: 7px;
+  font-style: italic;
 }
